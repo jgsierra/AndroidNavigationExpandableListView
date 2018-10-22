@@ -33,6 +33,13 @@ public class FragmentNavigationManager implements NavigationManager {
     @Override
     public void showFragment(String titulo) {
 
-        showFragment(FragmentContent.newInstance(titulo),false);
     }
 }
+   // @Override
+//    public void showFragment(String titulo) {
+//
+//        showFragment(FragmentContent.newInstance(titulo),false);
+//    }
+//
+
+
