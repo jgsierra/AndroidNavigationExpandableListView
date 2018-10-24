@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setTitle("Plenario");
+        getSupportActionBar().setTitle("Sistemas");
 
         View listHeaderView = getLayoutInflater().inflate(R.layout.nav_header,null,false);
         expListView.addHeaderView(listHeaderView);
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-                getSupportActionBar().setTitle("Regresar");
+                getSupportActionBar().setTitle("Cerrar Drawer");
                 invalidateOptionsMenu();
             }
 
@@ -128,8 +128,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         mDrawerToggle.setDrawerIndicatorEnabled(true);
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
-    }
+        mDrawerLayout.setDrawerListener(mDrawerToggle);}
 
         @Override
     public boolean onOptionsItemSelected(MenuItem item) {
